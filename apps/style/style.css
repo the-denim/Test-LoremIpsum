@@ -5,14 +5,16 @@
     margin: 0;
 }
 
-
+body{
+    position: relative;
+}
 .topnav {
     padding: 1rem 0 1rem 0;
     position: fixed;
     display: grid;
-    min-width: 700px;
+    min-width: 750px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0.25rem 0.25rem 0.7rem rgb(0, 0, 0, 0.7);
+    box-shadow: 0 0.25rem 0.7rem rgb(0, 0, 0, 0.3);
     grid-template-areas:
         "right left";
     position: relative;
@@ -31,7 +33,7 @@
 }
 
 .topnav .left {
-    padding-left: 1rem;
+    padding-left: 3rem;
     display: flex;
     position: absolute;
     left: 0;
@@ -40,7 +42,7 @@
 }
 
 .topnav .right {
-    padding-right: 1rem;
+    padding-right: 3rem;
     display: flex;
     position: absolute;
     right: 0;
@@ -77,9 +79,30 @@ a {
 .topnav .left ul li:not(.paragraph){
     background-color: rgb(42, 101, 165);
     border-radius: 3rem;
-    box-shadow: 0 0.25rem 0.5rem rgb(0, 0, 0, 0.5) inset;
+    box-shadow: 0 0.2rem 0.5rem rgb(0, 0, 0, 0.4) inset;
 }
 
 .topnav .left ul li a{
     color: white;
+}
+.land-page {
+    min-width: 900px;
+    max-width: 1000px;
+    height: 20rem;
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "text man";
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    margin: 1rem;
+}
+.land-page:nth-child(1) {
+    grid-area: text;
+}
+.land-page:nth-child(2) {
+    grid-area: man;
 }
