@@ -28,9 +28,7 @@ body{
         "right left";
     position: relative;
     overflow: hidden;
-    height: 2rem;
-    margin-bottom: 2rem;
-    margin: auto;
+    height: 3vh;
 }
 
 .topnav:nth-child(1) {
@@ -81,18 +79,55 @@ body{
 a {
     color: black;
     text-decoration: none;
+    font-size: 14px;
 }
 .topnav .left ul li{
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
-.topnav .left ul li:not(.paragraph){
+.topnav .left ul li button:not(.paragraph){
     background-color: #225594;
-    border-radius: 3rem;
     box-shadow: 0 0.2rem 0.5rem rgb(0, 0, 0, 0.4) inset;
+    border-style: none;
+    color: white;
+    padding: 0.35rem;
+    cursor: pointer;
 }
 
 .topnav .left ul li a{
     color: white;
+}
+.search button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.search {
+    object-position: center;
+}
+.search img {
+    width: 20px;
+    
+}
+.cart button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+.cart {
+    object-position: center;
+}
+.cart img{
+    width: 20px;
+    object-position: center;
+}
+.login button{
+    border-radius: 2rem;
+    height: 40px;
+    width: 7rem;
+}
+.paragraph {
+    margin-top: 6px;
 }
 /*---------------------------land-page-------------------------------*/
 .land-page {
@@ -150,9 +185,8 @@ a {
     width: 10rem;
     height: 3rem;
     font-size: 16px;
-    right: 180%;
-    transform: translateX(-180%);
-    margin-left: 3rem;
+    
+    margin-right: 7rem;
     margin-top: 2rem;
     cursor: pointer;
 }
@@ -166,4 +200,19 @@ a {
     100% {
         transform: translateY(0);
     }
+}
+@keyframes btnhvr {
+    0% {
+        scale: 100%; 
+    }
+    50% {
+        scale: 99%;
+    }
+    100% {
+        scale: 95%;
+    }
+}
+button:active{
+    animation-name: btnhvr;
+    animation-duration: 50ms;
 }
