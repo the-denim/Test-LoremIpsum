@@ -5,9 +5,9 @@
     margin: 0;
     font-family: shabnam;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
 @font-face {
-    font-family: "shabnam";
+    font-family: 'Readex Pro', sans-serif;
     src:
         url("apps/fonts/shabnam/Shabnam.woff"),
         url("apps/fonts/shabnam/Shabnam.ttf");
