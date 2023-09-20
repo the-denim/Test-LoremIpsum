@@ -106,10 +106,12 @@ body {
 }
 
 .topnav .left ul li button:not(.paragraph) {
-    background-color: #225594;
+    /*background-color: #225594;
     box-shadow: 0 0.2rem 0.5rem rgb(0, 0, 0, 0.4) inset;
-    border-style: none;
-    color: white;
+    border-style: none;*/
+    background-color: transparent;
+    border: 2px solid #225594;
+    color: #225594;
     padding: 0.35rem;
     cursor: pointer;
 }
@@ -122,6 +124,7 @@ body {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    
 }
 
 .search {
@@ -147,6 +150,7 @@ body {
 .cart img {
     width: 20px;
     object-position: center;
+    color: #225594;
 }
 
 .login button {
@@ -217,18 +221,22 @@ body {
 }
 
 .land-page .text button {
-    background-color: #225594;
-    border-radius: 3rem;
+    /*background-color: #225594;
     box-shadow: 0 0.2rem 0.5rem rgb(0, 0, 0, 0.4) inset;
+    */
+    border-radius: 3rem;
     border-style: none;
     color: white;
     width: 10rem;
     height: 3rem;
     font-size: 16px;
-
     margin-right: 7rem;
     margin-top: 2rem;
     cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid #225594;
+    color: #225594;
 }
 
 @keyframes float {
