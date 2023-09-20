@@ -237,7 +237,7 @@ a {
     cursor: pointer;
 }
 
-/*@keyframes float {
+@keyframes float {
     0% {
         transform: translateY(0);
     }
@@ -277,7 +277,7 @@ a {
         transform: translateY(0rem);
     }
 }
-*/
+
 button:active {
     animation-name: btnhvr;
     animation-duration: 50ms;
