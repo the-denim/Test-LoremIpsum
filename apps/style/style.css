@@ -278,14 +278,14 @@ button:active {
 }
 
 .search img:active {
-    animation-name: btnhvr;
-    animation-duration: 50ms;
+    scale: 90%;
+    transition: scale 50ms;
 
 }
 
 .cart img:active {
-    animation-name: btnhvr;
-    animation-duration: 50ms;
+    scale: 90%;
+    transition: scale 50ms;
 }
 a:not(:nth-child(0)) {
     color: black;
