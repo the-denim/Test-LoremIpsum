@@ -144,6 +144,8 @@ a {
     box-shadow: 0 0.25rem 0.7rem rgb(0, 0, 0, 0.3);
     border-radius: 0.5rem;
     overflow: hidden;
+    animation-name: transformation;
+    animation-duration: 3s;
 }
 .land-page:nth-child(1) {
     grid-area: text;
@@ -212,7 +214,32 @@ a {
         scale: 95%;
     }
 }
+@keyframes transformation {
+    0% {
+        transform: translateY(-10rem);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
 button:active{
     animation-name: btnhvr;
     animation-duration: 50ms;
+}
+.search img:active {
+    animation-name: btnhvr;
+    animation-duration: 50ms;
+    
+}
+.cart img:active {
+    animation-name: btnhvr;
+    animation-duration: 50ms;
+}
+a:hover {
+    color:crimson;
+}
+a:active {
+    font-weight: 600;
 }
