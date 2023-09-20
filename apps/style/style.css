@@ -201,7 +201,7 @@ a {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .land-page .man-float img {
