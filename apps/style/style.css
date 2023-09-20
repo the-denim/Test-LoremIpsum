@@ -14,7 +14,9 @@
 }
 body{
     position: relative;
-    background-color: #E1F1FF;
+    /*background-color: #E1F1FF;*/
+    background-image: url(/apps/img/stars2.jpg);
+    background-size: 300px;
 }
 /*---------------------------topnav-------------------------------*/
 .topnav {
@@ -28,7 +30,10 @@ body{
         "right left";
     position: relative;
     overflow: hidden;
-    height: 3vh;
+    height: 5vh;
+    animation-name: topnavmove;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 .topnav:nth-child(1) {
@@ -145,7 +150,8 @@ a {
     border-radius: 0.5rem;
     overflow: hidden;
     animation-name: transformation;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
 }
 .land-page:nth-child(1) {
     grid-area: text;
@@ -160,6 +166,7 @@ a {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
 .land-page .man-float img{
@@ -222,6 +229,14 @@ a {
     100% {
         transform: translateY(0);
         opacity: 100%;
+    }
+}
+@keyframes topnavmove {
+    0% {
+        transform: translateY(-5rem);
+    }
+    100% {
+        transform: translateY(0rem);
     }
 }
 button:active{
