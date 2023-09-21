@@ -15,9 +15,9 @@
 
 body {
     position: relative;
-    /*background-color: #E1F1FF;*/
+    background-color: #E1F1FF;
     background-image: url(/apps/img/stars2.jpg);
-    background-size: 300px;
+    background-size: 350px;
 }
 
 /*---------------------------topnav-------------------------------*/
@@ -238,7 +238,6 @@ body {
     border: 2px solid #225594;
     color: #225594;
 }
-
 @keyframes float {
     0% {
         transform: translateY(0);
